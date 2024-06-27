@@ -34,7 +34,8 @@
 }
 
 - (BOOL)isConnected{
-    return [_currentBleSerial isConnected];
+    BOOL isConnected = _currentBleSerial.state == CBPeripheralStateConnected;
+    return isConnected;
 }
 
 - (BOOL)scan{
@@ -545,7 +546,8 @@
 
 - (BOOL)updateRSSI{
     if (_currentBleSerial != nil) {
-        if ([_currentBleSerial isConnected]) {
+        BOOL isConnected = _currentBleSerial.state == CBPeripheralStateConnected;
+        if (isConnected) {
             [_currentBleSerial readRSSI];
             return YES;
         }

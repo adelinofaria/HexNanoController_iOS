@@ -108,7 +108,7 @@ void sendRequestMSP(const vector<byte>& msp) {
 NSData *getDefaultOSDDataRequest(){
     vector<byte> requestList = requestMSPList(mainInfoRequest, kOsdInfoRequestListLen);
     
-    int requestDataSize = requestList.size();
+    NSUInteger requestDataSize = requestList.size();
     
     
     

@@ -478,17 +478,17 @@
 		E0DDF9E216846E1A00F2A21E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E08EA64A192D8DC3005C1DBA /* ArtificialHorizonView.h */,
+				E08EA64B192D8DC3005C1DBA /* ArtificialHorizonView.m */,
+				E08EA65D192D9075005C1DBA /* CompassView.h */,
+				E08EA65E192D9075005C1DBA /* CompassView.m */,
+				E08EA65A192D904B005C1DBA /* DoubleBufferedAsyncView.h */,
+				E08EA65B192D904B005C1DBA /* DoubleBufferedAsyncView.m */,
+				E0DDFA951684C6ED00F2A21E /* FSSlider.h */,
+				E0DDFA961684C6ED00F2A21E /* FSSlider.m */,
 				E08EA663192D91E5005C1DBA /* GaugeViewCommon.h */,
 				E08EA660192D908F005C1DBA /* VerticalScaleView.h */,
 				E08EA661192D908F005C1DBA /* VerticalScaleView.m */,
-				E08EA65D192D9075005C1DBA /* CompassView.h */,
-				E08EA65E192D9075005C1DBA /* CompassView.m */,
-				E08EA64A192D8DC3005C1DBA /* ArtificialHorizonView.h */,
-				E08EA65A192D904B005C1DBA /* DoubleBufferedAsyncView.h */,
-				E08EA65B192D904B005C1DBA /* DoubleBufferedAsyncView.m */,
-				E08EA64B192D8DC3005C1DBA /* ArtificialHorizonView.m */,
-				E0DDFA951684C6ED00F2A21E /* FSSlider.h */,
-				E0DDFA961684C6ED00F2A21E /* FSSlider.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

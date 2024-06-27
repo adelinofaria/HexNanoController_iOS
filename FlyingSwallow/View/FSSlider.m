@@ -82,7 +82,7 @@
         
         sliderHeight = scrollBtn.size.height;
         
-        int labelValuePrecision = [self tag];
+        NSInteger labelValuePrecision = [self tag];
         
         char formatStr[]={"%.0f"};
         

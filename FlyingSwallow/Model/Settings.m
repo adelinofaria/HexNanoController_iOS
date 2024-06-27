@@ -189,11 +189,11 @@
     [_settingsData writeToFile:_path atomically:YES];
 }
 
-- (int)channelCount{
+- (NSUInteger)channelCount{
     return [_channelArray count];
 }
 
-- (Channel *)channelAtIndex:(int)i{
+- (Channel *)channelAtIndex:(NSInteger)i{
     if(i < [_channelArray count]){
         return [_channelArray objectAtIndex:i];
     }

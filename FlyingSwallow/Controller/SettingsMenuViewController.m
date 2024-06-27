@@ -235,11 +235,13 @@ typedef enum settings_alert_dialog{
 - (void)updateConnectionState{    
     CBPeripheral *peripheral = [[[Transmitter sharedTransmitter] bleSerialManager] currentBleSerial];
 
-    if(isTryingConnect && ![peripheral isConnected]){
+    BOOL isConnected = peripheral.state == CBPeripheralStateConnected;
+
+    if(isTryingConnect && !isConnected){
         return;
     }
     else{
-        if ([peripheral isConnected]) {
+        if (isConnected) {
             isTryingConnect = NO;
         }
         
@@ -552,7 +554,7 @@ typedef enum settings_alert_dialog{
 
 - (void)scrollViewDidScroll:(UIScrollView *)_scrollView
 {
-	int currentPage = (int) (settingsPageScrollView.contentOffset.x + .5f * settingsPageScrollView.frame.size.width) / settingsPageScrollView.frame.size.width;
+    NSUInteger currentPage = (NSUInteger)(settingsPageScrollView.contentOffset.x + .5f * settingsPageScrollView.frame.size.width) / settingsPageScrollView.frame.size.width;
     
     if (currentPage == 0)
     {
