@@ -64,7 +64,7 @@
 
         
         NSArray *channelDataArray = [_settingsData objectForKey:kKeySettingsChannels];
-        int channelCount = [channelDataArray count];
+        NSUInteger channelCount = [channelDataArray count];
         _channelArray = [[NSMutableArray alloc] initWithCapacity:channelCount];
 
         for(int channelIdx = 0; channelIdx < channelCount; channelIdx++){

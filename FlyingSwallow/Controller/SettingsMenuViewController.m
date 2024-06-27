@@ -46,7 +46,7 @@ typedef enum settings_alert_dialog{
     NSMutableArray *pageViewArray;
     NSMutableArray *pageTitleArray;
     
-    int pageCount;
+    NSUInteger pageCount;
     
     Settings *settings;
     
